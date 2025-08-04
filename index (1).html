@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Etalase Produk Bisnis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0 1rem;
+      font-family: 'Rubik', sans-serif;
+      background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      overflow-x: hidden;
+      overflow-y: auto;
+      box-sizing: border-box;
+    }
+
+    h1 {
+  animation: fadeInDown 1s ease forwards;
+      font-size: 2.2rem;
+      color: #0984e3;
+      margin: 2rem 0 1rem;
+    }
+
+    p.intro {
+  animation: fadeInUp 1.2s ease forwards;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+      max-width: 600px;
+    }
+
+    .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  justify-items: center;
+  margin-bottom: 2rem;
+}
+
+    .product-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .product-card:hover {$1
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .product-card .content {
+      padding: 1rem;
+    }
+
+    .product-card h3 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+      color: #2d3436;
+    }
+
+    .product-card p {
+      font-size: 0.95rem;
+      color: #636e72;
+    }
+
+    .product-card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: #00cec9;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .product-card a:hover {
+      background: #00b894;
+    }
+
+    .from {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #fff;
+      margin: 2rem 0;
+    }
+  @keyframes blink {
+  0% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+.from a {
+  animation: blink 1s infinite alternate;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-card {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.product-card:nth-child(1) { animation-delay: 0.1s; }
+.product-card:nth-child(2) { animation-delay: 0.2s; }
+.product-card:nth-child(3) { animation-delay: 0.3s; }
+.product-card:nth-child(4) { animation-delay: 0.4s; }
+.product-card:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+.product-card {
+  animation: fadeInUp 0.8s ease forwards, float 3s ease-in-out infinite;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.from {
+  animation: fadeIn 2s ease forwards;
+}
+</style>
+</head>
+<body>
+  <h1>Temukan Cita Rasa Tradisional Favoritmu 🍘</h1>
+  <p class="intro">
+    Aneka kerupuk dan camilan khas rumahan yang siap menggugah selera. Yuk, pilih produk favoritmu dan nikmati kelezatannya! 😋
+  </p>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://i.postimg.cc/JGmJTkR8/opak-singkong-tradisional.jpg" alt="Opak Singkong Tradisional">
+      <div class="content">
+        <h3>Opak Singkong Tradisional 1kg</h3>
+        <p>Rp31.999 – Gurih Renyah ala Enye Khas Rumahan</p>
+        <a href="https://shopee.co.id/Opak-Singkong-Tradisional-1kg-%E2%80%93-Gurih-Renyah-ala-Enye-enye-Khas-Rumahan-i.34187972.43460985548" target="_blank">Lihat di Shopee</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i.postimg.cc/s1zJMXvM/kerupuk-gendar-mentah.jpg" alt="Kerupuk Gendar Mentah">
+      <div class="content">
+        <h3>Kerupuk Gendar Mentah 200gr</h3>
+        <p>Rp14.499 – Siap Goreng, Renyah Gurih Khas Tradisional</p>
+        <a href="https://shopee.co.id/Kerupuk-Gendar-Mentah-200gr-%E2%80%93-Siap-Goreng-Renyah-Gurih-Khas-Tradisional-i.34187972.29939350728" target="_blank">Lihat di Shopee</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i.postimg.cc/nCdngC6g/opak-singkong-stik.jpg" alt="Opak Singkong Stik">
+      <div class="content">
+        <h3>Opak Singkong Stik 1kg</h3>
+        <p>Rp31.999 – Kecimpring Enye Khas Mang Uday</p>
+        <a href="https://shopee.co.id/Opak-Singkong-Stik-1kg-%E2%80%93-Kecimpring-Enye-Khas-Mang-Uday-Renyah-Gurih-Tradisional-i.34187972.43110990674" target="_blank">Lihat di Shopee</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i.postimg.cc/xkvhrZX8/rengginang-tradisional.jpg" alt="Rengginang Tradisional">
+      <div class="content">
+        <h3>Rengginang Tradisional 50 pcs</h3>
+        <p>Rp37.999 – Gurih, Renyah dan Bikin Nagih</p>
+        <a href="https://shopee.co.id/Rengginang-Tradisional-50-pcs-%E2%80%93-Gurih-Renyah-dan-Bikin-Nagih-i.34187972.43160986086" target="_blank">Lihat di Shopee</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i.postimg.cc/NyqSztfZ/kerupuk-singkong-super.jpg" alt="Kerupuk Singkong Super">
+      <div class="content">
+        <h3>Kerupuk Singkong Super Renyah 500gr</h3>
+        <p>Rp19.499 – Ukuran Besar, Gurihnya Nendang!</p>
+        <a href="https://shopee.co.id/Kerupuk-Singkong-Super-Renyah-500gr-%E2%80%93-Ukuran-Besar-Gurihnya-Nendang!-i.34187972.28189345997" target="_blank">Lihat di Shopee</a>
+      </div>
+    </div>
+  </div>
+  <div class="from" style="text-align:center;"><a href="https://shopee.co.id/luthfi.45120" target="_blank" style="color: #fff; text-decoration: underline;">By : Luthfi45120</a></div>
+</body>
+</html>
